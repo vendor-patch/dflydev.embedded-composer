@@ -2,6 +2,7 @@
     "name": "vendor-patch/dflydev.embedded-composer",
     "description": "Embed Composer into another application+fork",
     "keywords": ["embedded", "composer", "extensibility"],
+    "type" : "library",
     "license": "MIT",
     "authors": [
         {
@@ -19,6 +20,22 @@
             "email": "software@frdl.de"
         }
     ],
+
+    "repositories": [
+  
+        {
+            "type": "composer",
+            "url": "https:\/\/packages.frdl.de"
+        },   
+
+        {
+  "url":
+"https://github.com/vendor-patch/dflydev.embedded-composer.git",
+            "type": "git"
+        }  
+    ],  
+    
+    
     "require": {
         "php": ">=7.2 || >=8.2",
         "composer/composer": "^1.0 || >=2.0",
