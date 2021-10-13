@@ -50,7 +50,7 @@
     "autoload": {
         "psr-4": { 
             "VersionAgnostic\\VendorPatch\\EmbeddedComposer\\Webfantized\\": "webfan-module-shares/",
-            "Dflydev\\EmbeddedComposer": "src" 
+            "Dflydev\\EmbeddedComposer\\": "src" 
         }
     }
 }
