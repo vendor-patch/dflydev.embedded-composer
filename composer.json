@@ -1,6 +1,6 @@
 {
-    "name": "dflydev/embedded-composer",
-    "description": "Embed Composer into another application",
+    "name": "vendor-patch/dflydev.embedded-composer",
+    "description": "Embed Composer into another application+fork",
     "keywords": ["embedded", "composer", "extensibility"],
     "license": "MIT",
     "authors": [
@@ -13,32 +13,29 @@
             "name": "Beau Simensen",
             "email": "beau@dflydev.com",
             "homepage": "http://beausimensen.com"
+        },
+        {
+            "name": "Till Wehowski",
+            "email": "software@frdl.de"
         }
     ],
     "require": {
-        "php": ">=5.3.2",
-        "composer/composer": "^1.0"
+        "php": ">=7.2 || >=8.2",
+        "composer/composer": "^1.0 || >=2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~3.7.10",
-        "symfony/console": "~2.3@dev",
-        "symfony/http-kernel": "~2.1"
+        "phpunit/phpunit": "*",
+        "symfony/console": "*",
+        "symfony/http-kernel": "*",
+        "dflydev/embedded-composer": "*"
     },
     "suggest": {
-        "symfony/console": "~2.3",
-        "symfony/http-kernel": "~2.1"
-    },
-    "replace": {
-        "dflydev/embedded-composer-bundle": "self.version",
-        "dflydev/embedded-composer-console": "self.version",
-        "dflydev/embedded-composer-core": "self.version"
+        "symfony/console": "*",
+        "symfony/http-kernel": "*"
     },
     "autoload": {
-        "psr-0": { "Dflydev\\EmbeddedComposer": "src" }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
+        "psr-4": { 
+            "VendorPatch\\Frdl\\VersionAgnostic\\Dflydev\\": "src/" 
         }
     }
 }
